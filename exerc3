@@ -1,0 +1,48 @@
+//Exercicio 3
+<?php
+class Produto{
+  public $nome;
+  public $valor;
+  public $quantidade;
+  public $total;
+ public $desconto;
+
+  public function Produto($nom,$pro,$qua){
+    $this->nome = $no;
+    $this->valor= $pr;
+    $this-> quantidade = $qu;
+    $this->total = $this->total* $this->quantidade;
+
+      if($this->quantidade >=11 and $this->quantidade <=20){
+        $this->desconto= "10%";
+        $desconto = ($this->total*10)/100;
+        $this->total = $this->total - $desconto;
+        
+      }
+      elseif($this->quantidade >=21 and $this->quantidade<=50){
+        $this->desconto= "20%";
+        $desconto = ($this->valor*20)/100;
+        $this->total = $this->total - $desconto;
+
+      }
+      elseif($this->quantidade >50){
+        $this->desconto= "25%";
+        $desconto = ($this->total*25)/100;
+        $this->total = $this->total - $desconto;
+      }
+      else{
+        $this->desconto = 0;
+      }
+  }
+}
+$produto1 = new Produto("batata",3.11,12
+);
+  print_r($produto1);
+
+$produto2 = new Produto("coca",3.00,23);
+  print_r($produto2);
+
+$produto3 = new Produto("biscoito",9.00,20);
+  print_r($produto3);
+  ?>
+
