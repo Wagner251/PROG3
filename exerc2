@@ -1,0 +1,82 @@
+//Exercicio-2
+
+<?php
+class Empregado{
+  public $nome1;
+  public $nome2;
+  public $smensal;
+  public $sanual;
+
+  public function __construct(){
+    $this-> nome1 = "Roberto";
+    $this-> nome2 = "Firmino";
+    $this-> smensal = 3000.00;
+  }
+
+  public function setnome1($recebe){
+    return $this->nome1 = $recebe;
+  }
+
+  public function getnome1(){
+    return $this ->nome1;
+  }
+
+  public function setnome2($recebe1){
+    return $this->nome2 = $recebe1;
+  }
+
+  public function getnome2(){
+    return $this ->nome2;
+  }
+
+  public function setsmensal($recebe2){
+    return $this->smensal = $recebe2;
+  }
+
+  public function getsmensal(){
+    return $this ->smensaln;
+  }
+
+  public function setsanual(){
+    
+    return $this->sanual = $this->smensal*12;
+  }
+
+  public function getsanual(){
+    return $this ->sanual;
+  }
+
+  public function validasmensal(){
+    if($this->smensal < 0){
+      $this->smensal = 0.0;
+    }
+  }
+
+  public function aumentasmensal(){
+    $porc = ($this->smensal*10)/100;
+    $this-> smensal = $this->smensal + $porc;
+  }
+}
+
+//empregado-1
+$empregado= new Empregado();
+$empregado->validasmensal();
+$empregado->setsanual();
+echo "O salario anual de {$empregado-> getnome1()} {$empregado->getnome2()} é R$ {$empregado->getsanual()}\n"; 
+$empregado -> aumentasmensal();
+$empregado->setsanual();
+echo "O salario anual de {$empregado-> getnome1()} recebeu acrescimo de 10% e agora é de R$ {$empregado->getsanual()} \n ";
+
+
+//empregado-2
+$empregado2 = new Empregado();
+$empregado2 -> setnome1("Gabriel");
+$empregado2 -> setnome2("Jesus");
+$empregado2->setsmensal(25000);
+$empregado2->validasmensal();
+$empregado2->setsanual();
+echo "O salario anual de {$empregado2-> getnome1()}  {$empregado2->getnome2()} é R$ {$empregado2->getsanual()} \n"; 
+$empregado2 -> aumentasmensal();
+$empregado2->setsanual();
+echo "O salario anual de {$empregado2-> getnome1()} recebeu acrescimo de 10% e agora é de R$ {$empregado2->getsanual()} \n ";
+?>
