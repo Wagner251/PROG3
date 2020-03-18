@@ -1,0 +1,14 @@
+//Exercicio 1 - Descreva em no máximo 200 palavras o que é um automóvel e o que ele faz. Liste os substantivos e verbos separadamente. Cada substantivo corresponde a um objeto que precisará ser construído para implementar um sistema, nesse caso, um carro. Selecione 5 dos objetos que você listou e, para cada um, liste vários atributos e comportamentos. Descreva brevemente como esses objetos interagem entre si e com outros objetos na sua descrição. Estes passos que você seguiu são típicos do projeto orientado a objetos.
+
+/*automóvel/*
+
+Automóvel realiza locomoção de algum corpo, um transporte de um ponto a outro, precisa de um piloto, motor, acelerador, freio, marchas e embreagem.
+
+/*objetos/*
+
+Piloto: ele controla de maneira geral o automóvel, ele aciona o acelerador, freio e a embreagem para poder trocar as marchas que faz com que o motor envie comando as rodas para deixar o automóvel mais rápido.
+Motor: o motor ele é converte a energia da gasolina em energia mecânica, assim fazendo o automóvel se locomover.
+Acelerador: o acelerador serve para aumentar a velocidade do automóvel na medida que o piloto deseja.
+Freio: o freio serve para diminuir a velocidade do automóvel com o comando do piloto.
+Marchas: serve para enviar comandos ao motor para deixar o automóvel mais lento ou mais rápido.
+Embreagem: E fundamental para poder trocar as marchas.
